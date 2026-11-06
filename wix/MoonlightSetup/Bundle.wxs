@@ -105,14 +105,7 @@
         <MsiProperty Name="ADDDESKTOPSHORTCUT" Value="[AddDesktopShortcutCheckbox]" />
       </MsiPackage>
 
-      <MsiPackage Id="Moonlight_arm64"
-                  SourceFile="$(env.BUILD_ROOT)\build-arm64-$(env.BUILD_CONFIG)\Moonlight.msi"
-                  Name="Moonlight_arm64.msi"
-                  InstallCondition="NativeMachine = 43620"
-                  Vital="yes">
-        <MsiProperty Name="INSTALLFOLDER" Value="[InstallFolder]" />
-        <MsiProperty Name="ADDDESKTOPSHORTCUT" Value="[AddDesktopShortcutCheckbox]" />
-      </MsiPackage>
+      
     </Chain>
 
   </Bundle>
