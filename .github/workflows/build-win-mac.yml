@@ -59,6 +59,8 @@ jobs:
 
       - name: Build Package
         shell: pwsh
+        env:
+          INCLUDE_ARM64: 0
         run: |
           if ($Env:RUNNER_OS -eq "Windows") {
             cmd /c scripts\generate-bundle.bat Release
